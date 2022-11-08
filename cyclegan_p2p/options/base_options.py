@@ -1,9 +1,8 @@
 import argparse
 import os
-from util import util
+from cyclegan_p2p.util import util
 import torch
-import models
-import data
+from cyclegan_p2p import models, data
 
 
 class BaseOptions():

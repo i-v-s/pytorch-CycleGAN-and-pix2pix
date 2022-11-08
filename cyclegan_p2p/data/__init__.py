@@ -12,7 +12,7 @@ See our template dataset class 'template_dataset.py' for more details.
 """
 import importlib
 import torch.utils.data
-from data.base_dataset import BaseDataset
+from cyclegan_p2p.data.base_dataset import BaseDataset
 
 
 def find_dataset_using_name(dataset_name):
@@ -51,7 +51,7 @@ def create_dataset(opt):
         This is the main interface between this package and 'train.py'/'test.py'
 
     Example:
-        >>> from data import create_dataset
+        >>> from cyclegan_p2p.data import create_dataset
         >>> dataset = create_dataset(opt)
     """
     data_loader = CustomDatasetDataLoader(opt)
