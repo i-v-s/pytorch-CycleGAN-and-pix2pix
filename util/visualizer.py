@@ -1,4 +1,6 @@
 import numpy as np
+np.finfo(np.dtype("float32"))
+np.finfo(np.dtype("float64"))
 import os
 import sys
 import ntpath
